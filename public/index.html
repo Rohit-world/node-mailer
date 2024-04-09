@@ -1,0 +1,35 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>superman vs Batman</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container LoginPageContainer">
+      <h1>I am Vengence</h1>
+      <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required /><br />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required /><br />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <div id="emailForm" class="container" style="display: none">
+      <textarea
+        id="emailContent"
+        placeholder="Enter your email content here..."
+      ></textarea>
+      <div id="recipientList"></div>
+      <button id="sendButton">Send Email</button>
+    </div>
+
+    <div id="loadingSpinner" class="spinner" style="display: none"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
